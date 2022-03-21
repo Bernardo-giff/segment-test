@@ -12,9 +12,19 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Segment Test</h1>
+    <div>
+        <h1>Segment Test</h1>
+        <button type="button">Click Me to test segment connection!</button>
+    </div>  
     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat nisi similique velit quasi, consectetur minima magnam accusamus illo consequatur eaque, corrupti eius saepe provident ipsum sint. Corrupti assumenda provident eos.</p>
     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat nisi similique velit quasi, consectetur minima magnam accusamus illo consequatur eaque, corrupti eius saepe provident ipsum sint. Corrupti assumenda provident eos.</p>
     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat nisi similique velit quasi, consectetur minima magnam accusamus illo consequatur eaque, corrupti eius saepe provident ipsum sint. Corrupti assumenda provident eos.</p>
 </body>
 </html>
+
+<footer>    
+    analytics.identify(' {{user.id}} ', {
+        name: '{{user.fullname}}',
+        email: '{{user.email}}'
+    });
+</footer>
