@@ -130,7 +130,7 @@
                 href="https://www.linkedin.com/" 
                 title="" 
                 class="fa-icon"
-                onclick="analytics.track('Linkedin clicked')"
+                onclick="getLinkedInClicked()"
               >
                 <i class="fa fa-linkedin"></i>
               </a>
@@ -155,6 +155,10 @@ document.addEventListener("DOMContentLoaded", function (event) {
   navbarToggleSidebar();
   navActivePage();
 });
+function getLinkedInClicked() {
+  analytics.track("LinkedIn icon clicked")
+}
+
 </script>
 
 <!-- Google Analytics: change UA-XXXXX-X to be your site's ID 
@@ -169,7 +173,6 @@ document.addEventListener("DOMContentLoaded", function (event) {
   ga('create', 'UA-XXXXX-X', 'auto');
   ga('send', 'pageview');
 </script>
-
 --> <script type="text/javascript" src="./main.85741bff.js"></script></body>
 
 </html>
