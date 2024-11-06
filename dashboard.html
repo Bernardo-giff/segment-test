@@ -43,18 +43,13 @@
 
   <body>
     <main>
-      <article>
-        <hgroup>
-          <h1>Password</h1>
-          <h2>Please enter your password for this site.</h2>
-        </hgroup>
-        ${withError ? `<p class="error">Incorrect password, please try again.</p>` : ''}
-        <form method="post" action="/cfp_login">
-          <input type="hidden" name="redirect" value="${redirectPath}" />
-          <input type="password" name="password" placeholder="Password" aria-label="Password" autocomplete="current-password" required autofocus>
-          <button type="submit" class="contrast">Login</button>
-        </form>
-      </article>
+      <script type="module" src="https://public.tableau.com/javascripts/api/tableau.embedding.3.latest.min.js"></script>
+
+
+      <tableau-viz id="tableauViz"       
+        src='https://public.tableau.com/views/Superstore_embedded_800x800/Overview'      
+        toolbar="bottom" hide-tabs>
+      </tableau-viz>
     </main>
   </body>
 
