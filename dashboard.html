@@ -1,51 +1,8 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="dark">
-
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Password Protected Site</title>
-    <meta name="description" content="This site is password protected.">
-    <link rel="shortcut icon" href="https://picocss.com/favicon.ico">
-
-    <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
-
-    <style>
-      body > main {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        min-height: calc(100vh - 7rem);
-        padding: 1rem 0;
-        max-width: 600px;
-      }
-
-      .error {
-        background: white;
-        border-radius: 10px;
-        color: var(--del-color);
-        padding: 0.5em 1em;
-      }
-
-      h2 { color: var(--color-h2); }
-    </style>
-  </head>
-
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-BS0ECBDJ64"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-BS0ECBDJ64');
-</script>
-
   <body>
     <main>
       <script type="module" src="https://public.tableau.com/javascripts/api/tableau.embedding.3.latest.min.js"></script>
-
-
       <tableau-viz id="tableauViz"       
         src='https://public.tableau.com/views/Superstore_embedded_800x800/Overview'      
         toolbar="bottom" hide-tabs>
