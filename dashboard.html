@@ -3,16 +3,17 @@
 <head>
   <meta charset="UTF-8" />
   <title>Tableau Pulse Test</title>
-  <script src="https://cdn.jsdelivr.net/npm/@tableau/tableau-pulse-embed@latest/dist/pulse-embed.min.js"></script>
+  <script type="module"
+  src="https://online.tableau.com/javascripts/api/tableau.embedding.3.latest.min.js">
+</script>  
+
 </head>
 <body>
   <h1>Pulse Card</h1>
   <tableau-pulse
     id="tableauPulse"
     src="https://dub01.online.tableau.com/pulse/site/metaloop-embedded/metrics/dacc607b-04b0-46ae-8cb8-c854ce32f99d"
-    token="eyJhbGciOiJIUzI1NiIsImlzcyI6IjBiM2YwNTEyLWUyNjAtNGY4Yi05YTM4LTE2ZWJkZTI5MzliMCIsImtpZCI6IjM3OTM2OGQ2LTkxNmEtNDNiNy1hYmQxLTkzOTExY2M3MWQ4YSIsInR5cCI6IkpXVCJ9.eyJpc3MiOiIwYjNmMDUxMi1lMjYwLTRmOGItOWEzOC0xNmViZGUyOTM5YjAiLCJleHAiOjE3NDc4MzA0OTYsImp0aSI6ImQxZmEwNTNkLTllMDktNDQ3MS1iOWVhLWE1ZjJkOGY0MTFiYiIsImF1ZCI6InRhYmxlYXUiLCJzdWIiOiJiZXJuYXJkby5jYXJ2YWxob0BtZXRhbG9vcC5jb20iLCJzY3AiOlsidGFibGVhdTp2aWV3czplbWJlZCIsInRhYmxlYXU6dmlld3M6ZW1iZWRfYXV0aG9yaW5nIiwidGFibGVhdTppbnNpZ2h0czplbWJlZCJdfQ.MlUAqL0_veiRi1TcC0VxVlxogku8-V2X5jnj62KcIn0"
-    layout="default"
-    style="width: 100%; height: 300px;"
+    token="eyJhbGciOiJIUzI1NiIsImlzcyI6IjBiM2YwNTEyLWUyNjAtNGY4Yi05YTM4LTE2ZWJkZTI5MzliMCIsImtpZCI6IjM3OTM2OGQ2LTkxNmEtNDNiNy1hYmQxLTkzOTExY2M3MWQ4YSIsInR5cCI6IkpXVCJ9.eyJpc3MiOiIwYjNmMDUxMi1lMjYwLTRmOGItOWEzOC0xNmViZGUyOTM5YjAiLCJleHAiOjE3NDc4MzEwMDYsImp0aSI6IjFjYWYxN2FmLTZhNTktNDIyZi1hZmNkLTVlYmY0YWY2MTY2YSIsImF1ZCI6InRhYmxlYXUiLCJzdWIiOiJiZXJuYXJkby5jYXJ2YWxob0BtZXRhbG9vcC5jb20iLCJzY3AiOlsidGFibGVhdTp2aWV3czplbWJlZCIsInRhYmxlYXU6dmlld3M6ZW1iZWRfYXV0aG9yaW5nIiwidGFibGVhdTppbnNpZ2h0czplbWJlZCJdfQ.HuqtaL7BHgEqD_AvlXmlk-Fy0yqMl4XaMFSq9r-DquI"
   ></tableau-pulse>
 </body>
 </html>
