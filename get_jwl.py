@@ -16,12 +16,21 @@ load_dotenv()
 # Use client_id from .env
 # Use username from .env
 
+secret_id="379368d6-916a-43b7-abd1-93911cc71d8a"
+secret_value="N892zqD5l5R5CCslTXav+BZgxpuQ8Js5OcBsGPcz8mY="
+client_id="0b3f0512-e260-4f8b-9a38-16ebde2939b0"
+username="bernardo.carvalho@metaloop.com"
 
+# secretId = os.getenv('secret_id')
+# secretValue = os.getenv('secret_id')
+# clientId = os.getenv('client_id')
+# username = os.getenv('username')
 
-secretId = os.getenv('secret_id')
-secretValue = os.getenv('secret_id')
-clientId = os.getenv('client_id')
-username = os.getenv('username')
+secretId = secret_id
+secretValue = secret_value
+clientId = client_id
+username = username
+
 tokenExpiryInMinutes = 10  # Max of 10 minutes.
 
 # Remove 'tableau:views:embed_authoring' scope if Authoring is not needed.
